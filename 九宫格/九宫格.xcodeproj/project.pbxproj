@@ -15,6 +15,7 @@
 		6B6F563B1C95B0AE002CC601 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B6F56391C95B0AE002CC601 /* LaunchScreen.xib */; };
 		6B6F56471C95B0AE002CC601 /* ___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6F56461C95B0AE002CC601 /* ___Tests.m */; };
 		6B6F56511C95BD68002CC601 /* shop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B6F56501C95BD68002CC601 /* shop.plist */; };
+		6BEC49BC1C9698B4001E99A3 /* shopInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BEC49BB1C9698B4001E99A3 /* shopInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		6B6F56451C95B0AE002CC601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B6F56461C95B0AE002CC601 /* ___Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___Tests.m"; sourceTree = "<group>"; };
 		6B6F56501C95BD68002CC601 /* shop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shop.plist; sourceTree = "<group>"; };
+		6BEC49BA1C9698B4001E99A3 /* shopInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shopInfo.h; sourceTree = "<group>"; };
+		6BEC49BB1C9698B4001E99A3 /* shopInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shopInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 				6B6F562F1C95B0AE002CC601 /* AppDelegate.m */,
 				6B6F56311C95B0AE002CC601 /* ViewController.h */,
 				6B6F56321C95B0AE002CC601 /* ViewController.m */,
+				6BEC49BA1C9698B4001E99A3 /* shopInfo.h */,
+				6BEC49BB1C9698B4001E99A3 /* shopInfo.m */,
 				6B6F562A1C95B0AE002CC601 /* Supporting Files */,
 			);
 			path = "九宫格";
@@ -226,6 +231,7 @@
 				6B6F56331C95B0AE002CC601 /* ViewController.m in Sources */,
 				6B6F56301C95B0AE002CC601 /* AppDelegate.m in Sources */,
 				6B6F562D1C95B0AE002CC601 /* main.m in Sources */,
+				6BEC49BC1C9698B4001E99A3 /* shopInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

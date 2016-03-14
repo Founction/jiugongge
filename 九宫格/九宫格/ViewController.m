@@ -1,4 +1,5 @@
 #import "ViewController.h"
+#import "shopInfo.h"
 
 @interface ViewController ()
 //由于shopsView要反复使用，所以用strong
@@ -16,17 +17,19 @@
 {
     if (_shops == nil)
     {
-         NSBundle *bundle = [NSBundle mainBundle];
-    
-        NSString *file = [bundle pathForResource:@"shop.plist" ofType:nil];
-    
-        self.shops = [NSArray arrayWithContentsOfFile:file];
-    
+        NSArray *dicArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"shop.plist" ofType:nil]];
+        
+        NSMutableArray *shopArray = [NSMutableArray array];
+        
+        for (NSDictionary *dic in dicArray)
+        {
+            shopInfo *shop = [shopInfo shopWithDic:dic];
+            [shopArray addObject:shop];
+        }
+        _shops = shopArray;
     }
     //NSLog(@"%d",__LINE__);打印当前行
     return _shops;
-    
-  
 }
 
 - (void)viewDidLoad {
