@@ -14,6 +14,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+//    self.shopsView = [[UIView alloc] init];
+//    self.shopsView.frame = CGRectMake(0, 90, 375, 550);
+//    self.shopsView.backgroundColor = [UIColor redColor];
     _shopsView = [[UIView alloc] init];
     _shopsView.frame = CGRectMake(0, 90, 375, 550);
     _shopsView.backgroundColor = [UIColor redColor];
@@ -22,22 +26,14 @@
     
     self.removeBtn = [self addButtonWithImage:@"remove" highImage:@"remove_highlighted" disableImage:@"remove_disabled" frame:CGRectMake(250, 30, 50, 50) action:@selector(removebtn)];
     
-    //数据
-    self.shops = @[
-                   @{@"icon" : @"danjianbao",
-                     @"name" : @"单肩包"
-                     },
-                   @{@"icon" : @"shuangjianbao",
-                     @"name" : @"双肩包"
-                     },
-                   @{@"icon" : @"qianbao",
-                     @"name" : @"钱包"
-                     },
-                   @{@"icon" : @"liantiaobao",
-                     @"name" : @"链条包"
-                     }
-                   ];
+    //数据通过plist方法获得数据
+    NSBundle *bundle = [[NSBundle alloc] init];
     
+    NSString *path = [bundle pathForResource:@"shop.plist" ofType:nil];
+    //NSString *path = [bundle pathForResource:shop ofType:plist];
+    
+    self.shops = [NSArray arrayWithContentsOfFile:path];
+ 
     
 }
 
