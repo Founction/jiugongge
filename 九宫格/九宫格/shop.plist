@@ -1,34 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>New item - 4</key>
+<array>
 	<dict>
 		<key>icon</key>
 		<string>danjianbao</string>
 		<key>name</key>
 		<string>单肩包</string>
 	</dict>
-	<key>New item - 3</key>
 	<dict>
 		<key>icon</key>
 		<string>shuangjianbao</string>
 		<key>name</key>
 		<string>双肩包</string>
 	</dict>
-	<key>New item - 2</key>
 	<dict>
 		<key>icon</key>
 		<string>qianbao</string>
 		<key>name</key>
 		<string>钱包</string>
 	</dict>
-	<key>New item</key>
 	<dict>
 		<key>icon</key>
 		<string>liantiaobao</string>
 		<key>name</key>
 		<string>链条包</string>
 	</dict>
-</dict>
+</array>
 </plist>

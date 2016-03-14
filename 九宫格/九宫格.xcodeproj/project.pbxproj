@@ -87,9 +87,6 @@
 				6B6F562F1C95B0AE002CC601 /* AppDelegate.m */,
 				6B6F56311C95B0AE002CC601 /* ViewController.h */,
 				6B6F56321C95B0AE002CC601 /* ViewController.m */,
-				6B6F56341C95B0AE002CC601 /* Main.storyboard */,
-				6B6F56371C95B0AE002CC601 /* Images.xcassets */,
-				6B6F56391C95B0AE002CC601 /* LaunchScreen.xib */,
 				6B6F562A1C95B0AE002CC601 /* Supporting Files */,
 			);
 			path = "九宫格";
@@ -100,6 +97,9 @@
 			children = (
 				6B6F562B1C95B0AE002CC601 /* Info.plist */,
 				6B6F562C1C95B0AE002CC601 /* main.m */,
+				6B6F56391C95B0AE002CC601 /* LaunchScreen.xib */,
+				6B6F56371C95B0AE002CC601 /* Images.xcassets */,
+				6B6F56341C95B0AE002CC601 /* Main.storyboard */,
 				6B6F56501C95BD68002CC601 /* shop.plist */,
 			);
 			name = "Supporting Files";
@@ -420,6 +420,7 @@
 				6B6F564C1C95B0AE002CC601 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B6F564D1C95B0AE002CC601 /* Build configuration list for PBXNativeTarget "九宫格Tests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +429,7 @@
 				6B6F564F1C95B0AE002CC601 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

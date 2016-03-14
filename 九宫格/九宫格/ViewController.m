@@ -11,6 +11,23 @@
 @end
 
 @implementation ViewController
+//重写get方法，懒加载
+-(NSArray *)shops
+{
+    if (_shops == nil)
+    {
+         NSBundle *bundle = [NSBundle mainBundle];
+    
+        NSString *file = [bundle pathForResource:@"shop.plist" ofType:nil];
+    
+        self.shops = [NSArray arrayWithContentsOfFile:file];
+    
+    }
+    //NSLog(@"%d",__LINE__);打印当前行
+    return _shops;
+    
+  
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,13 +43,13 @@
     
     self.removeBtn = [self addButtonWithImage:@"remove" highImage:@"remove_highlighted" disableImage:@"remove_disabled" frame:CGRectMake(250, 30, 50, 50) action:@selector(removebtn)];
     
-    //数据通过plist方法获得数据
-    NSBundle *bundle = [[NSBundle alloc] init];
+//    //数据通过plist方法获得数据
+//    NSBundle *bundle = [[NSBundle alloc] init];
+//    
+//    NSString *path = [bundle pathForResource:@"shop.plist" ofType:nil];
+//    //NSString *path = [bundle pathForResource:shop ofType:plist];
+//    
     
-    NSString *path = [bundle pathForResource:@"shop.plist" ofType:nil];
-    //NSString *path = [bundle pathForResource:shop ofType:plist];
-    
-    self.shops = [NSArray arrayWithContentsOfFile:path];
  
     
 }
@@ -99,6 +116,7 @@
     //    UIImage *imageName = [UIImage imageNamed:@"danjianbao"];
     //    UIImageView *iconView = [[UIImageView alloc] initWithImage:imageName];
     NSDictionary *shop = self.shops[index];
+    NSLog(@"%d",__LINE__);
     //设置图片信息
     UIImageView *imageView = [[UIImageView alloc]init];
     imageView.image = [UIImage imageNamed:shop[@"icon"]];
